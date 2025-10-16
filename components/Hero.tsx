@@ -61,18 +61,31 @@ export default function Hero() {
             <div className="absolute inset-0 bg-black/40" />
           </div>
           
-          <div className="relative container mx-auto px-4 h-full flex items-center">
-            <div className="max-w-2xl text-white">
-              <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 xs:mb-3 sm:mb-4 animate-fade-in leading-tight">
+          <div className="relative container mx-auto px-4 h-full flex items-center justify-between gap-8">
+            {/* Logo Container - Right Side */}
+            <div className="flex-shrink-0 w-full md:w-auto flex justify-center md:justify-end md:order-2">
+              <div className="bg-white/98 backdrop-blur-md rounded-3xl shadow-2xl border-4 border-primary-red/30 p-4 sm:p-6 md:p-8 lg:p-10 hover:scale-105 transition-all duration-500 hover:shadow-primary-red/50 hover:border-primary-red/50">
+                <img 
+                  src="/logo.svg" 
+                  alt="Carolina-Süd Möbel Logo" 
+                  className="w-64 h-auto sm:w-72 md:w-80 lg:w-96 xl:w-[450px] object-contain drop-shadow-lg"
+                  style={{ aspectRatio: '3/2' }}
+                />
+              </div>
+            </div>
+            
+            {/* Content - Left Side */}
+            <div className="hidden md:block max-w-xl text-white md:order-1">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4 animate-fade-in leading-tight">
                 {slide.title}
               </h2>
-              <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2 sm:mb-3 font-semibold">
+              <p className="text-xl md:text-2xl lg:text-3xl mb-2 md:mb-3 font-semibold">
                 {slide.subtitle}
               </p>
-              <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl mb-3 xs:mb-4 sm:mb-6 md:mb-8 text-gray-200">
+              <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 text-gray-200">
                 {slide.description}
               </p>
-              <button className="bg-primary-red hover:bg-red-700 text-white px-5 py-2.5 xs:px-6 xs:py-3 sm:px-8 sm:py-4 rounded-lg text-sm xs:text-base sm:text-lg font-bold transition-all transform hover:scale-105 shadow-lg">
+              <button className="bg-primary-red hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all transform hover:scale-105 shadow-lg">
                 {slide.cta}
               </button>
             </div>

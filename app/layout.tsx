@@ -9,7 +9,7 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: "متجر مفروشات فاخر | Luxury Furniture Store",
+  title: "carollinasud | متجر مفروشات فاخر",
   description: "اكتشف مجموعتنا الفاخرة من الأثاث الراقي - Discover our luxury furniture collection",
 };
 

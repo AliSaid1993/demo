@@ -22,9 +22,9 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">
-              <span className="text-primary-red">متجر</span>
-              <span className="text-primary-black"> مفروشات فاخر</span>
+              <span className="text-primary-red">carollinasud</span>
             </h1>
+            <p className="text-xs sm:text-sm text-gray-600 mt-0.5">متجر مفروشات فاخر</p>
           </div>
 
           {/* Desktop Navigation */}

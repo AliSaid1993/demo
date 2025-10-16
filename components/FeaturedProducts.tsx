@@ -143,11 +143,11 @@ export default function FeaturedProducts() {
 
                 <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
                   <span className="text-lg sm:text-xl md:text-2xl font-bold text-primary-red">
-                    {product.price} ر.س
+                    €{product.price}
                   </span>
                   {product.originalPrice && (
                     <span className="text-xs sm:text-sm text-gray-400 line-through">
-                      {product.originalPrice} ر.س
+                      €{product.originalPrice}
                     </span>
                   )}
                 </div>

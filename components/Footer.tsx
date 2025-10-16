@@ -82,19 +82,19 @@ export default function Footer() {
               <li className="flex items-start gap-2 sm:gap-3">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary-red flex-shrink-0 mt-1" />
                 <span className="text-sm sm:text-base text-gray-400">
-                  الرياض، المملكة العربية السعودية
+                  25, 78224 Freibuhlstr
                 </span>
               </li>
               <li className="flex items-center gap-2 sm:gap-3">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary-red flex-shrink-0" />
-                <a href="tel:+966500000000" className="text-sm sm:text-base text-gray-400 hover:text-primary-red transition-colors">
-                  +966 50 000 0000
+                <a href="tel:+491631421112" className="text-sm sm:text-base text-gray-400 hover:text-primary-red transition-colors">
+                  +49 163 1421112
                 </a>
               </li>
               <li className="flex items-center gap-2 sm:gap-3">
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary-red flex-shrink-0" />
-                <a href="mailto:info@luxuryfurniture.sa" className="text-sm sm:text-base text-gray-400 hover:text-primary-red transition-colors break-all">
-                  info@luxuryfurniture.sa
+                <a href="mailto:carollinasud@gmail.com" className="text-sm sm:text-base text-gray-400 hover:text-primary-red transition-colors break-all">
+                  carollinasud@gmail.com
                 </a>
               </li>
             </ul>
