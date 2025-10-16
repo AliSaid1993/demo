@@ -1,0 +1,37 @@
+{
+  "name": "royal-furniture-store",
+  "version": "1.0.0",
+  "description": "موقع إلكتروني فاخر لمتجر مفروشات عالي المستوى",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx live-server --port=8000",
+    "build": "[my-framework] build --output public",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "furniture",
+    "e-commerce",
+    "arabic",
+    "rtl",
+    "luxury",
+    "مفروشات",
+    "متجر إلكتروني"
+  ],
+  "author": "Royal Furniture Store",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/royal-furniture-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/royal-furniture-store/issues"
+  },
+  "homepage": {
+    "https": "//github.com/yourusername/royal-furniture-store#readme"
+  }
+}
