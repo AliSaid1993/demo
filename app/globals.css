@@ -54,4 +54,53 @@
       font-size: 14px;
     }
   }
+  
+  /* Elegant animation for title */
+  @keyframes fadeInSlide {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeInSlide 0.8s ease-out;
+  }
+  
+  /* Smooth gradient text effect */
+  .gradient-text {
+    background: linear-gradient(135deg, #C41E3A 0%, #8B4049 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Continuous elegant animation for middle word */
+  @keyframes floatPulse {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+      text-shadow: 0 2px 4px rgba(196, 30, 58, 0.1);
+    }
+    25% {
+      transform: translateY(-3px) scale(1.05);
+      text-shadow: 0 4px 8px rgba(196, 30, 58, 0.2);
+    }
+    50% {
+      transform: translateY(0) scale(1.08);
+      text-shadow: 0 6px 12px rgba(196, 30, 58, 0.3);
+    }
+    75% {
+      transform: translateY(-3px) scale(1.05);
+      text-shadow: 0 4px 8px rgba(196, 30, 58, 0.2);
+    }
+  }
+  
+  .animate-float-pulse {
+    display: inline-block;
+    animation: floatPulse 3s ease-in-out infinite;
+  }
 }

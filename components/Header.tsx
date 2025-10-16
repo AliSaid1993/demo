@@ -11,8 +11,8 @@ export default function Header() {
       {/* Top Bar */}
       <div className="bg-primary-black text-white py-2">
         <div className="container mx-auto px-4 text-center text-xs sm:text-sm">
-          <p className="hidden sm:block">شحن مجاني للطلبات فوق 5000 ريال | Free Shipping on Orders Over 5000 SAR</p>
-          <p className="sm:hidden">شحن مجاني للطلبات فوق 5000 ر.س</p>
+          <p className="hidden sm:block">شحن مجاني للطلبات فوق 500€ | Free Shipping on Orders Over €500</p>
+          <p className="sm:hidden">شحن مجاني للطلبات فوق €500</p>
         </div>
       </div>
 
@@ -21,10 +21,18 @@ export default function Header() {
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">
-              <span className="text-primary-red">carollinasud</span>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold animate-fade-in">
+              <span 
+                className="text-primary-red animate-float-pulse hover:scale-105 inline-block transition-all duration-500 ease-in-out hover:tracking-wider cursor-pointer"
+                style={{ 
+                  fontFamily: 'Georgia, serif', 
+                  letterSpacing: '1.5px',
+                  textShadow: '0 2px 4px rgba(196, 30, 58, 0.1)'
+                }}
+              >
+                Carolina Süd Möbel
+              </span>
             </h1>
-            <p className="text-xs sm:text-sm text-gray-600 mt-0.5">متجر مفروشات فاخر</p>
           </div>
 
           {/* Desktop Navigation */}

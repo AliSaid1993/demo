@@ -29,12 +29,27 @@ const slides = [
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [showLogo, setShowLogo] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // إظهار اللوغو عند التمرير أكثر من 50 بكسل
+      if (window.scrollY > 50) {
+        setShowLogo(true);
+      } else {
+        setShowLogo(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const nextSlide = () => {
@@ -63,7 +78,9 @@ export default function Hero() {
           
           <div className="relative container mx-auto px-4 h-full flex items-center justify-between gap-8">
             {/* Logo Container - Right Side */}
-            <div className="flex-shrink-0 w-full md:w-auto flex justify-center md:justify-end md:order-2">
+            <div className={`flex-shrink-0 w-full md:w-auto flex justify-center md:justify-end md:order-2 transition-all duration-1000 ease-out ${
+              showLogo ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+            }`}>
               <div className="bg-white/98 backdrop-blur-md rounded-3xl shadow-2xl border-4 border-primary-red/30 p-4 sm:p-6 md:p-8 lg:p-10 hover:scale-105 transition-all duration-500 hover:shadow-primary-red/50 hover:border-primary-red/50">
                 <img 
                   src="/logo.svg" 
